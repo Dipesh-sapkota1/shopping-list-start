@@ -31,7 +31,7 @@ const onAddItemSubmit = (e) =>{
         isToEdit.remove();
         isEditMode = false;
     }else{
-        if(checkIfItemExist){
+        if(checkIfItemExist(newItem)){
             alert('Item already exist');
             return;
         }
